@@ -9,12 +9,11 @@
 title: 辽东小码农
 email: liaodongxiaoxiao@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  写代码是一件很美妙的事情 ^O^     
+  Love Coding,Love life.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.liaodongxiaoxiao.com" # the base hostname & protocol for your site
-twitter_username: liaodongxiaoxiao
+url: "http://www.liaodongxiaoxiao.com" 
+twitter_username: Eastern_L
 github_username:  liaodongxiaoxiao
 
 # Build settings
