@@ -9,7 +9,7 @@ categories: [Android Development Notes,Android Tips]
 在没debug，这段代码时，我排除了好多假设，花了我好久的时间。
 而且每次遍历的数据条数都在变。
 同事遍历Cursor是这样写的:
-```java
+{% highlight java %}
 if(cursor ==null) {
 	Log.w(TAG,"....");
 }else{
@@ -17,22 +17,22 @@ if(cursor ==null) {
 		//do someting ....
 	}
 }
-```
+{% endhighlight %}
 找了好久才发现，这段遍历的方式不对。他就没有把Cursor移动到起始位置。
 正确的遍历方式是这样的：
-```java
+{% highlight java %}
 //cursor不为空，moveToFirst为true说明有数据
 if(cursor!=null&&cursor.moveToFirst()){
 	do{
 		//do something
 	}while(cursor.moveToNext);
 }
-```
+{% endhighlight %}
 或者：
-```java
+{% highlight java %}
 if(cursor!=null&&cursor.moveToFirst()){
 	while (!result.isAfterLast()) {
 		//do something
 	}
 }
-```
+{% endhighlight %}
