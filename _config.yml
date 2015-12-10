@@ -9,12 +9,29 @@
 title: 辽东小码农
 email: liaodongxiaoxiao@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  写代码是一件很美妙的事情 ^O^     
-  Love Coding,Love life.
+  写代码是一件很美妙的事情 ^O^ 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.liaodongxiaoxiao.com" 
 twitter_username: Eastern_L
-github_username:  liaodongxiaoxiao
+ithub_username:  liaodongxiaoxiao
+# Layout settings
+header_type: default  # values [ drawer, default ]
+post_type: highlight    # values [ highlight, default ]
+pagination_type: default  # values [ ops, default ]
+
+more_vert:
+  option1:
+    name: Cool Option 1
+    link: www.myawesomelink.com
+  option2:
+    name: Cool Option 2
+    link: www.myawesomelink.com
+  option3:
+    name: Cool Option 3
+    link: www.myawesomelink.com
+
+disqus: true
+disqus_shortname: 'gdgmanagua'
 
 # Build settings
 markdown: kramdown
