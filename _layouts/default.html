@@ -1,45 +1,23 @@
-<!DOCTYPE html>
-<html>
+---
+theme :
+  name : dbyll
+---
+{% include default.html %}
 
-  {% include head.html %}
+{% if site.google_analytics %}
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  var _gaq = _gaq || [];
+  var pluginUrl =
+ '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', '{{ site.google_analytics }}']);
+  _gaq.push(['_trackPageview']);
 
-  <body>
-
-    <!-- Start Layout -->
-    {% if site.header_type == 'drawer' %}
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer">
-      {% include search_result.html %}
-      {% include header_fixed.html %}
-    {% else %}
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      {% include search_result.html %}
-      {% include header.html %}
-    {% endif %}
-
-      <main class="mdl-layout__content">
-        {{ content }}
-        {% include footer.html %}
-      </main>
-
-    </div>
-    <!-- /End Layout -->
-
-    <!-- Material Design Lite js Library -->
-	<script rel="javascript" type="text/javascript" src="{{ "/js/material.min.js" | prepend: site.baseurl }}"></script>
-
-    {% if site.pagination_type == 'ops' %}
-    <script rel="javascript" type="text/javascript" src="{{ "/js/site.js" | prepend: site.baseurl }}"></script>
-    {% endif %}
-    <script rel="javascript" type="text/javascript" src="{{ "/js/search.js" | prepend: site.baseurl }}"></script>
-    <script rel="javascript" type="text/javascript">
-      superSearch({
-        searchFile: '/feed.xml',
-        searchSelector: '#js-search', // CSS Selector for search container element.
-        inputSelector: '#js-search__input', // CSS selector for <input>
-        resultsSelector: '#js-search__results' // CSS selector for results container
-      });
-    </script>
-	
-  </body>
-
-</html>
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+{% endif %}
