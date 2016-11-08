@@ -23,20 +23,22 @@ tags:	[java,sqlite,mybatis]
 |log4j-1.2.15.jar          | 控制台打印执行SQL语句  |
 
 #### 步骤
-1. 通过使用SqliteStudio创建需求的数据结构的db文件，并将db文件拷贝到src路径下
-2. 创建mybatis db配置文件
+
+##### 1. 通过使用SqliteStudio创建需求的数据结构的db文件，并将db文件拷贝到src路径下
+
+##### 2. 创建mybatis db配置文件
 *src/db.properties*
 
-```java
+{% highlight properties %}
 jdbc.driverClassName=org.sqlite.JDBC
 jdbc.name=user.db
 jdbc.url=jdbc:sqlite:src/user_test.db 
 #指定db所在的路径 jdbc.url=jdbc:sqlite:E:/user_test.db
 jdbc.username=
 jdbc.password=
-```
-3.	配置Mybatis
-```html
+{% endhighlight %}
+##### 3. 配置Mybatis
+{% highlight xml %}
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
@@ -61,10 +63,11 @@ jdbc.password=
     		<mapper resource="com/ldxx/ms/orm/User.xml" />  
 	</mappers>
 </configuration>
-```
-4.	配置log4j文件，参考demo
-5.	编写DBUtils工具类，加载Mybatis配置，提供SqlSession对象
-```java
+{% endhighlight %}
+##### 4. 配置log4j文件，参考demo
+
+##### 5. 编写DBUtils工具类，加载Mybatis配置，提供SqlSession对象
+{% highlight java %}
 public class DBUtils {
 	private static SqlSession sqlSession = null;
 
@@ -88,8 +91,8 @@ public class DBUtils {
 		return sqlSession;
 	}
 }
-```
-6. 在创建Dao对象时，传入SqlSession对象
+{% endhighlight %}
+##### 6. 在创建Dao对象时，传入SqlSession对象
 
 更多详情请参考，[完整代码-github](https://github.com/liaodongxiaoxiao/MybatisSqlite)
 
