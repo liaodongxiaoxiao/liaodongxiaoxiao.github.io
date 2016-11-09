@@ -4,7 +4,7 @@ title:  Android SDK 历史版本
 categories: [Android,SDK]
 tags:	[Android,SDK]
 ---
-> Android SDK 历史版本 [参考](https://en.wikipedia.org/wiki/Android_version_history)
+> Android SDK 历史版本 [参考](https://en.wikipedia.org/wiki/Android_version_history){:target="_blank"}
 
  版本 | API Level | Version Code | 发布日期 
  :------ | :-------: | :----------- | :-----------
