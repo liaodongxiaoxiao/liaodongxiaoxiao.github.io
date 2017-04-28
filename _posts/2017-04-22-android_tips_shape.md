@@ -60,4 +60,18 @@ tags:	[Android Tips]
 />
 {% endhighlight %}
 
+## 2. EditText 设置默认不弹出软键盘
+> 在父布局控件中设置 *focusable* 和 *focusableInTouchMode* 两属性值为true，抢占焦点
 
+{% highlight xml %}
+<parent_layout
+	...
+	android:focusable="true"
+    android:focusableInTouchMode="true"
+	>
+
+  <EditText
+      ...
+  />
+</parent_layout>
+{% endhighlight %}
