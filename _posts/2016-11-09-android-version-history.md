@@ -4,7 +4,9 @@ title:  Android SDK 历史版本
 categories: [Android,SDK]
 tags:	[Android,SDK]
 ---
-> Android SDK 历史版本 [参考](https://en.wikipedia.org/wiki/Android_version_history){:target="_blank"}
+### 0. Android 历史版本
+
+> 以下内容参考于 [Wikipedia](https://en.wikipedia.org/wiki/Android_version_history){:target="_blank"}
 
  版本 | API Level | Version Code | 发布日期 
  :------ | :-------: | :----------- | :-----------
@@ -33,3 +35,10 @@ tags:	[Android,SDK]
   6.0 | 23 | [`M` (Marshmallow)](http://developer.android.com/reference/android/os/Build.VERSION_CODES.html#M)  | 2015-10-05
   7.0 | 24 | [`N` (Nougat)](http://developer.android.com/reference/android/os/Build.VERSION_CODES.html#N)  | 2016-08-01
   7.1 | 25 | [`N_MR1` (Nougat MR1)](http://developer.android.com/reference/android/os/Build.VERSION_CODES.html#N_MR1)  | 2016-10-04
+
+### 1. Java代码中使用
+{% highlight java %}
+if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+	...
+}
+{% endhighlight %}
