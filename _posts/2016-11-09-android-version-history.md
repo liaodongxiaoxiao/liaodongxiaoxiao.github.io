@@ -8,7 +8,7 @@ tags:	[Android,SDK]
 
 > 以下内容参考于 [Wikipedia](https://en.wikipedia.org/wiki/Android_version_history){:target="_blank"}
 
- 版本 | API Level | Version Code | 发布日期 
+ 版本 | API Level | Version Code | 发布日期
  :------ | :-------: | :----------- | :-----------
   1.0 | 1 | [`BASE`](http://developer.android.com/reference/android/os/Build.VERSION_CODES.html#BASE) | 2008-09-23
   1.1 | 2 | [`BASE_1_1`](http://developer.android.com/reference/android/os/Build.VERSION_CODES.html#BASE_1_1)  | 2009-02-09
@@ -35,6 +35,9 @@ tags:	[Android,SDK]
   6.0 | 23 | [`M` (Marshmallow)](http://developer.android.com/reference/android/os/Build.VERSION_CODES.html#M)  | 2015-10-05
   7.0 | 24 | [`N` (Nougat)](http://developer.android.com/reference/android/os/Build.VERSION_CODES.html#N)  | 2016-08-01
   7.1 | 25 | [`N_MR1` (Nougat MR1)](http://developer.android.com/reference/android/os/Build.VERSION_CODES.html#N_MR1)  | 2016-10-04
+  8.0~8.1 | 26~27 |[`O`(Oreo)]() |2017-8-27
+  9.0 | 28 |[`P`]() |2018-07-02
+
 
 ### 1. Java代码中使用
 {% highlight java %}
@@ -42,3 +45,5 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
 	...
 }
 {% endhighlight %}
+
+> update at 2018-07-05
