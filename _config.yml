@@ -13,7 +13,7 @@ defaults:
     scope:
       path: "" # empty string for all files
     values:
-      title: Coder Karl'Blog
+      title: 辽东小码农的Blog
 
 description: Stylish Jekyll Theme
 author:
