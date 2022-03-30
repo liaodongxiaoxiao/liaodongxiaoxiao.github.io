@@ -29,8 +29,8 @@ tags:	[tools]
 #### 2.  [jietu](https://jietu.qq.com/)--Mac OS截图工具
 > 腾讯出品，专为**MacOS**打造。支持截图和录屏功能。截图后可以加表情、标签、打码等功能
 
-<div style="width:100%" align="center">
-	<img src="{{ site.BASE_PATH}}/img/tools/jietu.jpg" alt="NB" style="width: 300px;"/>
+<div style="width:100%;padding-bottom:30px;" align="center">
+	<img src="{{ site.BASE_PATH}}/img/tools/jietu.jpg" alt="NB" style="width: 500px;"/>
 </div>
 
 --the End--
