@@ -37,7 +37,7 @@ ESP32刷MicroPython有好多方法，比如**Thonny**的Tools就支持安装、�
 
 
 
-[官方镜像地址
+[官方镜像地址](http://www.micropython.org/download/esp32c3/)
 
 拉倒页面最底部，下载要刷写的**bin**文件
 

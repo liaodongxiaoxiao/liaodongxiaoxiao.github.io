@@ -24,7 +24,7 @@ date:   2022-03-29 12:00:00
 
 结果如下：
 
-![NB]({{%20site.BASE_PATH}}/img/esp32/esp32_upip_01.png)
+![NB]({{ site.BASE_PATH}}/img/esp32/esp32_upip_01.png)
 
 ### 1. 使用upip安装三方库
 
