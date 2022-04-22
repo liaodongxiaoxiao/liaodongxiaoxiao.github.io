@@ -77,7 +77,7 @@ ESP32刷MicroPython有好多方法，比如**Thonny**的Tools就支持安装、�
 
 执行命令：
 
-> esptool.py --chip esp32-c3 --port **COM4** erase_flash
+> esptool.py \-\-chip esp32c3 \-\-port **COM4** erase_flash
 
 如上命令中**COM4**为步骤2中的Serial port，执行结果如下：
 
@@ -99,13 +99,11 @@ ESP32刷MicroPython有好多方法，比如**Thonny**的Tools就支持安装、�
 
 执行如下命令：
 
-> esptool.py --chip esp32-c3 --port **COM4** --baud 460800 write_flash -z **0x0** path:\esp32c3-20220117-v1.18.bin
+> esptool.py \-\-chip esp32c3 \-\-port **COM4** \-\-baud 460800 write_flash -z **0x0** path:\esp32c3-20220117-v1.18.bin
 
-**--port COM4**:是步骤2中获得的
-
-**-z 0x0** :这个不能错，错了刷完会一直报些莫名其妙的错误
-
-**path:\esp32c3-20220117-v1.18.bin**：是步骤2中下载的bin的路径和文件名
+* **\-\-port COM4**:是步骤2中获得的
+* **-z 0x0** :这个不能错，错了刷完会一直报些莫名其妙的错误
+* **path:\esp32c3-20220117-v1.18.bin**：是步骤2中下载的bin的路径和文件名
 
 运行结果如下：
 
